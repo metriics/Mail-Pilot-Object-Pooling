@@ -35,7 +35,11 @@ public class BulletController : MonoBehaviour
     {
         if (transform.position.y >= boundary.Top)
         {
-            bulletPoolManager.GetComponent<BulletPoolManager>().ResetBullet(this.gameObject);
+            // using singleton:
+            BulletPoolManager.Instance.ResetBullet(this.gameObject);
+
+            // using reference:
+            // bulletPoolManager.GetComponent<BulletPoolManager>().ResetBullet(this.gameObject);
         }
     }
 }

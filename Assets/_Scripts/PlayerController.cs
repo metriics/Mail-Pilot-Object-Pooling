@@ -117,7 +117,13 @@ public class PlayerController : MonoBehaviour
             {
                 _bulletSound.Play();
 
-                var firedBullet = bulletPoolManager.GetComponent<BulletPoolManager>().GetBullet();
+                // using singleton:
+                var firedBullet = BulletPoolManager.Instance.GetBullet();
+
+                // using reference:
+                // var firedBullet = bulletPoolManager.GetComponent<BulletPoolManager>().GetBullet();
+
+
                 firedBullet.transform.position = bulletSpawn.position;
                 firedBullet.transform.rotation = Quaternion.identity;
             }
