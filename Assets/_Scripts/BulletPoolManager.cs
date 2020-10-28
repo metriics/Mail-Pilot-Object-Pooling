@@ -15,6 +15,14 @@ public class BulletPoolManager : MonoBehaviour
     private Queue<GameObject> bulletPool = new Queue<GameObject>();
 
 
+    // singleton pattern implemented using @PearsonArtPhoto's method
+    // link: https://gamedev.stackexchange.com/a/116010
+
+    // explanation: we check if there is already an instance that is not 'this'
+    // if this is the case, that means 'this' is not the original instance and should be destroyed.
+    // else, we return this instance since it is the original.
+
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
