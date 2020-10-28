@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: Bonus - make this class a Singleton!
-
 [System.Serializable]
 public class BulletPoolManager : MonoBehaviour
 {
