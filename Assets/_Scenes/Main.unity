@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7008785284576285171, guid: bb06c5ba2d15c2647b82760f50c866d5, type: 3}
+  MaxBullets: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +560,11 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 2019295050}
+    - target: {fileID: 1611093553563445789, guid: 887c5bee811983a4cb06f9ea66643b36,
+        type: 3}
+      propertyPath: bulletPoolManager
+      value: 
+      objectReference: {fileID: 154382889}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 887c5bee811983a4cb06f9ea66643b36, type: 3}
 --- !u!1001 &6258031004616284574
